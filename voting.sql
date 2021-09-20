@@ -1,14 +1,13 @@
 -- phpMyAdmin SQL Dump
--- version 5.0.1
+-- version 5.1.0
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: May 26, 2021 at 12:13 PM
--- Server version: 10.4.11-MariaDB
--- PHP Version: 7.4.1
+-- Generation Time: Sep 17, 2021 at 06:11 AM
+-- Server version: 10.4.18-MariaDB
+-- PHP Version: 7.4.16
 
 SET SQL_MODE = "NO_AUTO_VALUE_ON_ZERO";
-SET AUTOCOMMIT = 0;
 START TRANSACTION;
 SET time_zone = "+00:00";
 
@@ -35,32 +34,33 @@ CREATE TABLE `candidate` (
   `lastname` varchar(100) NOT NULL,
   `year_level` varchar(100) NOT NULL,
   `gender` varchar(100) NOT NULL,
-  `img` varchar(100) NOT NULL
+  `img` varchar(100) NOT NULL,
+  `symbol` varchar(191) DEFAULT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
 
 --
 -- Dumping data for table `candidate`
 --
 
-INSERT INTO `candidate` (`candidate_id`, `position`, `firstname`, `lastname`, `year_level`, `gender`, `img`) VALUES
-(1, 'President', 'Jahed', 'Hasan', '4th Year', 'Male', 'upload/male3.jpg'),
-(2, 'General Secretary', 'James', 'Corden', '3rd Year', 'Male', 'upload/3.jpg'),
-(3, 'Vice President', 'Abir', 'Hossain', '2nd Year', 'Male', 'upload/1.jpg'),
-(4, 'President', 'Rafa', 'Anika', '4th Year', 'Female', 'upload/f1.jpg'),
-(5, 'Vice President', 'Abu Bakar', 'Abir', '4th Year', 'Male', 'upload/4.jpg'),
-(6, 'Secretary, Science and Technology', 'Abu Abbas', 'Sabbir', '3rd Year', 'Male', 'upload/6.jpg'),
-(7, 'General Secretary', 'Rafa', ' Anika', '4th Year', 'Female', 'upload/f2.jpg'),
-(8, 'Assistant General Secretary', 'Jamal ', 'Uddin', '2nd Year', 'Male', 'upload/2.png'),
-(9, 'Assistant General Secretary', 'Anjum', ' Islam', '1st Year', 'Female', 'upload/f6.png'),
-(10, 'Secretary, Science and Technology', 'Kamal ', 'khan', '3rd Year', 'Male', 'upload/10.jpg'),
-(11, 'Secretary, International Affiars', 'Jahed ', 'Hasan', '4th Year', 'Male', 'upload/11.png'),
-(12, 'Secretary, International Affiars', 'Hasan', ' Siddique', '3rd Year', 'Male', 'upload/12.png'),
-(13, 'Secretary, Literature', 'Sabbir ', 'Hasan', '3rd Year', 'Male', 'upload/12.png'),
-(14, 'Secretary, Literature', 'Anika Tabassum', 'Anika', '1st Year', 'Female', 'upload/5.jpg'),
-(15, 'Secretary, Culture', 'Jannat', 'Khan', '1st Year', 'Female', 'upload/f4.jpg'),
-(16, 'Secretary, Culture', 'Nadia Karim', 'Nadia', '4th Year', 'Female', 'upload/7f.jpg'),
-(17, 'Member', 'Arafat', 'Hossain', '1st Year', 'Male', 'upload/avatar2.png'),
-(18, 'Member', 'Hasan', 'Jahid', '4th Year', 'Male', 'upload/images.jpg');
+INSERT INTO `candidate` (`candidate_id`, `position`, `firstname`, `lastname`, `year_level`, `gender`, `img`, `symbol`) VALUES
+(1, 'President', 'Jahed', 'Hasan', '4th Year', 'Male', 'upload/male3.jpg', NULL),
+(3, 'Vice President', 'Abir', 'Hossain', '2nd Year', 'Male', 'upload/1.jpg', NULL),
+(4, 'President', 'Rafa', 'Anika', '4th Year', 'Female', 'upload/f1.jpg', NULL),
+(5, 'Vice President', 'Abu Bakar', 'Abir', '4th Year', 'Male', 'upload/4.jpg', NULL),
+(6, 'Secretary, Science and Technology', 'Abu Abbas', 'Sabbir', '3rd Year', 'Male', 'upload/6.jpg', NULL),
+(7, 'General Secretary', 'Rafa', ' Anika', '4th Year', 'Female', 'upload/f2.jpg', NULL),
+(8, 'Assistant General Secretary', 'Jamal ', 'Uddin', '2nd Year', 'Male', 'upload/2.png', NULL),
+(9, 'Assistant General Secretary', 'Anjum', ' Islam', '1st Year', 'Female', 'upload/4.JPG', 'upload/2.JPG'),
+(10, 'Secretary, Science and Technology', 'Kamal ', 'khan', '3rd Year', 'Male', 'upload/10.jpg', NULL),
+(11, 'Secretary, International Affiars', 'Jahed ', 'Hasan', '4th Year', 'Male', 'upload/11.png', NULL),
+(12, 'Secretary, International Affiars', 'Hasan', ' Siddique', '3rd Year', 'Male', 'upload/12.png', NULL),
+(13, 'Secretary, Literature', 'Sabbir ', 'Hasan', '3rd Year', 'Male', 'upload/12.png', NULL),
+(14, 'Secretary, Literature', 'Anika Tabassum', 'Anika', '1st Year', 'Female', 'upload/5.jpg', NULL),
+(15, 'Secretary, Culture', 'Jannat', 'Khan', '1st Year', 'Female', 'upload/f4.jpg', NULL),
+(16, 'Secretary, Culture', 'Nadia Karim', 'Nadia', '4th Year', 'Female', 'upload/7f.jpg', NULL),
+(17, 'Member', 'Arafat', 'Hossain', '1st Year', 'Male', 'upload/avatar2.png', NULL),
+(18, 'Member', 'Hasan', 'Jahid', '4th Year', 'Male', 'upload/images.jpg', NULL),
+(19, 'President', 'Jahed', 'Hasan', '1st Year', 'Male', 'upload/clibing.png', 'upload/Screenshot from 2021-05-04 23-10-02.png');
 
 -- --------------------------------------------------------
 
@@ -227,7 +227,7 @@ ALTER TABLE `votes`
 -- AUTO_INCREMENT for table `candidate`
 --
 ALTER TABLE `candidate`
-  MODIFY `candidate_id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=19;
+  MODIFY `candidate_id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=20;
 
 --
 -- AUTO_INCREMENT for table `user`

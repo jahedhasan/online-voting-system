@@ -1,0 +1,9 @@
+changes i added:
+-add candidate page
+- edit candidate page
+-candidate list page
+- report page
+- signup page information 
+.
+.
+Please add upload folder to admin folder. and add all other css image js folder to root directory.
