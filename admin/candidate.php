@@ -39,13 +39,13 @@
                                 <table class="table table-striped table-bordered table-hover" id="dataTables-example">
                                     <thead>
                                         <tr>
-                                         
                                             <th>Position</th>
                                             <th>Firstname</th>
                                             <th>Lastname</th>
                                             <th>Year Level</th>
                                             <th>Gender</th>
                                             <th>Image</th>
+                                            <th>Symbol</th>
                                             <th>Action</th>
                                         </tr>
                                     </thead>
@@ -65,7 +65,12 @@
                                             <td><?php echo $row ['lastname'];?></td>
                                             <td><?php echo $row ['year_level'];?></td>
                                             <td><?php echo $row ['gender'];?></td>
-                                            <td width="50"><img src="<?php echo $row['img']; ?>" width="50" height="50" class="img-rounded"></td>
+                                            <td width="60">
+                                                <img src="<?php echo $row['img']; ?>" width="60" height="60" class="img-rounded">
+                                            </td>
+                                            <td width="60">
+                                                <img src="<?php echo $row['symbol']; ?>" width="60" height="60" class="img-rounded">
+                                            </td>
                                             
                                             <td style="text-align:center">
 											

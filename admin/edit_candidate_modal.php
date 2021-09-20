@@ -75,6 +75,12 @@
 									<label>Image</label>
 									<input type="file" name="image"required> 
 					</div>
+
+					<div class="form-group">
+                        <label>Candidate Symbol</label>
+						<input type="file" name="symbol" required> 
+                    </div>
+
 					<button name = "update" type="submit" class="btn btn-primary">Save Data</button>
 				</form>
 			</div>
@@ -103,9 +109,12 @@
 			$image_size= getimagesize($_FILES['image']['tmp_name']);
 			move_uploaded_file($_FILES["image"]["tmp_name"],"upload/" . $_FILES["image"]["name"]);			
 			$location="upload/" . $_FILES["image"]["name"];
+			move_uploaded_file($_FILES["symbol"]["tmp_name"],"upload/" . $_FILES["symbol"]["name"]);	
+			$symbol_image_location= "upload/" . $_FILES["symbol"]["name"];	
+
 		
 	
-			$conn->query("UPDATE candidate SET position = '$position', firstname = '$firstname', lastname = '$lastname', year_level = '$year_level', gender = '$gender',img='$location' WHERE candidate_id = '$candidate_id'")or die(mysql_error());
+			$conn->query("UPDATE candidate SET position = '$position', firstname = '$firstname', lastname = '$lastname', year_level = '$year_level', gender = '$gender',img='$location', symbol ='$symbol_image_location' WHERE candidate_id = '$candidate_id'") or die(mysql_error());
 			echo "<script> window.location='candidate.php' </script>";
 		}	
 	?>

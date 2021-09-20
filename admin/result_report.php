@@ -48,6 +48,7 @@
 							<thead>
 								<td style = "width:600px;" class = "alert alert-success">Candidate for President</td>
 								<td style = "width:200px;"class = "alert alert-success">Image</td>
+								<td style = "width:200px;"class = "alert alert-success">Symbol</td>
 								<td class = "alert alert-success">Total</td>
 							
 							</thead>
@@ -64,6 +65,7 @@
 							<tbody> 
 								<td><?php echo $fetch ['firstname']. " ".$fetch ['lastname'];?></td>
 								<td><img src = "<?php echo $fetch ['img'];?>" style = "width:40px; height:40px; border-radius:500px; " >
+								<td><img src = "<?php echo $fetch ['symbol'];?>" style = "width:40px; height:40px; border-radius:500px; " >
 								<td style = "width:20px; text-align:center"><button class = "btn btn-primary"disabled><?php echo $fetch1 ['total'];?></button>	</td>
 							<?php }?>
 							</tbody>	
@@ -73,6 +75,7 @@
 							<thead>
 								<td style = "width:600px;"class = "alert alert-success">Candidate for Vice President</td>
 								<td style = "width:200px;" class = "alert alert-success">Image</td>
+								<td style = "width:200px;" class = "alert alert-success">Symbol</td>
 								<td class = "alert alert-success">Total</td>
 							
 							</thead>
@@ -88,7 +91,8 @@
 							?>
 							<tbody> 
 								<td><?php echo $fetch ['firstname']. " ".$fetch ['lastname'];?></td>
-								<td><img src = "<?php echo $fetch ['img'];?>" style = "width:40px; height:40px; border-radius:500px; " >
+								<td><img src = "<?php echo $fetch ['img'];?>" style = "width:40px; height:40px; border-radius:500px; " > </td>
+								<td><img src = "<?php echo $fetch ['symbol'];?>" style = "width:40px; height:40px; border-radius:500px; " > </td>
 								<td style = "width:20px; text-align:center"><button class = "btn btn-primary"disabled><?php echo $fetch1 ['total'];?></button>	</td>
 							<?php }?>
 							</tbody>
@@ -101,6 +105,7 @@
 							<thead>
 								<td style = "width:600px;"class = "alert alert-success">Candidate for General Secretary</td>
 								<td style = "width:200px;" class = "alert alert-success">Image</td>
+								<td style = "width:200px;" class = "alert alert-success">Symbol</td>
 								<td class = "alert alert-success">Total</td>
 							
 							</thead>
@@ -116,7 +121,12 @@
 							?>
 							<tbody> 
 								<td><?php echo $fetch ['firstname']. " ".$fetch ['lastname'];?></td>
-								<td><img src = "<?php echo $fetch ['img'];?>" style = "width:40px; height:40px; border-radius:500px; " >
+								<td>
+									<img src = "<?php echo $fetch ['img'];?>" style = "width:40px; height:40px; border-radius:500px; " >
+								</td>
+								<td>
+									<img src = "<?php echo $fetch ['symbol'];?>" style = "width:40px; height:40px; border-radius:500px; " >
+								</td>
 								<td style = "width:20px; text-align:center"><button class = "btn btn-primary"disabled><?php echo $fetch1 ['total'];?></button>	</td>
 							<?php }?>
 							</tbody>
@@ -127,6 +137,7 @@
 							<thead>
 								<td style = "width:600px;"class = "alert alert-success">Candidate for Assistant General Secretary</td>
 								<td style = "width:200px;" class = "alert alert-success">Image</td>
+								<td style = "width:200px;" class = "alert alert-success">Symbol</td>
 								<td class = "alert alert-success">Total</td>
 							
 							</thead>
@@ -142,7 +153,8 @@
 							?>
 							<tbody> 
 								<td><?php echo $fetch ['firstname']. " ".$fetch ['lastname'];?></td>
-								<td><img src = "<?php echo $fetch ['img'];?>" style = "width:40px; height:40px; border-radius:500px; " >
+								<td><img src = "<?php echo $fetch ['img'];?>" style = "width:40px; height:40px; border-radius:500px; " > </td>
+								<td><img src = "<?php echo $fetch ['symbol'];?>" style = "width:40px; height:40px; border-radius:500px; " > </td>
 								<td style = "width:20px; text-align:center"><button class = "btn btn-primary"disabled><?php echo $fetch1 ['total'];?></button>	</td>
 							<?php }?>
 							</tbody>
@@ -154,6 +166,7 @@
 							<thead>
 								<td style = "width:600px;"class = "alert alert-success">Candidate for Secretary, Science and Technology</td>
 								<td style = "width:200px;" class = "alert alert-success">Image</td>
+								<td style = "width:200px;" class = "alert alert-success">Symbol</td>
 								<td class = "alert alert-success">Total</td>
 								
 							</thead>
@@ -169,7 +182,8 @@
 							?>
 							<tbody> 
 								<td><?php echo $fetch ['firstname']. " ".$fetch ['lastname'];?></td>
-								<td><img src = "<?php echo $fetch ['img'];?>" style = "width:40px; height:40px; border-radius:500px; " >
+								<td><img src = "<?php echo $fetch ['img'];?>" style = "width:40px; height:40px; border-radius:500px; " > </td>
+								<td><img src = "<?php echo $fetch ['symbol'];?>" style = "width:40px; height:40px; border-radius:500px; " > </td>
 								<td style = "width:20px; text-align:center"><button class = "btn btn-primary"disabled><?php echo $fetch1 ['total'];?></button>	</td>
 									<?php }?>
 							</tbody>
@@ -181,6 +195,7 @@
 							<thead>
 								<td style = "width:600px;"class = "alert alert-success">Candidate for Secretary, International Affiars</td>
 								<td style = "width:200px;" class = "alert alert-success">Image</td>
+								<td style = "width:200px;" class = "alert alert-success">Symbol</td>
 								<td class = "alert alert-success">Total</td>
 									
 							</thead>
@@ -196,7 +211,8 @@
 							?>
 							<tbody> 
 								<td><?php echo $fetch ['firstname']. " ".$fetch ['lastname'];?></td>
-								<td><img src = "<?php echo $fetch ['img'];?>" style = "width:40px; height:40px; border-radius:500px; " >
+								<td><img src = "<?php echo $fetch ['img'];?>" style = "width:40px; height:40px; border-radius:500px; " ></td>
+								<td><img src = "<?php echo $fetch ['symbol'];?>" style = "width:40px; height:40px; border-radius:500px; " > </td>
 								<td style = "width:20px; text-align:center"><button class = "btn btn-primary"disabled><?php echo $fetch1 ['total'];?></button>	</td>
 							<?php }?>
 							</tbody>
@@ -210,6 +226,7 @@
 								<thead>
 									<td style = "width:600px;"class = "alert alert-success">Candidate for Secretary, Literature</td>
 									<td style = "width:200px;" class = "alert alert-success">Image</td>
+									<td style = "width:200px;" class = "alert alert-success">Symbol</td>
 									<td class = "alert alert-success">Total</td>
 								
 								</thead>
@@ -225,7 +242,8 @@
 							?>
 							<tbody> 
 								<td><?php echo $fetch ['firstname']. " ".$fetch ['lastname'];?></td>
-								<td><img src = "<?php echo $fetch ['img'];?>" style = "width:40px; height:40px; border-radius:500px; " >
+								<td><img src = "<?php echo $fetch ['img'];?>" style = "width:40px; height:40px; border-radius:500px; " > </td>
+								<td><img src = "<?php echo $fetch ['symbol'];?>" style = "width:40px; height:40px; border-radius:500px; " > </td>
 								<td style = "width:20px; text-align:center"><button class = "btn btn-primary"disabled><?php echo $fetch1 ['total'];?></button>	</td>
 							<?php }?>
 							</tbody>
@@ -238,6 +256,7 @@
 								<thead>
 									<td style = "width:600px;"class = "alert alert-success">Candidate for Secretary, Culture</td>
 									<td style = "width:200px;" class = "alert alert-success">Image</td>
+									<td style = "width:200px;" class = "alert alert-success">Symbol</td>
 									<td class = "alert alert-success">Total</td>
 								
 								</thead>
@@ -253,7 +272,8 @@
 								?>
 								<tbody> 
 									<td><?php echo $fetch ['firstname']. " ".$fetch ['lastname'];?></td>
-									<td><img src = "<?php echo $fetch ['img'];?>" style = "width:40px; height:40px; border-radius:500px; " >
+									<td><img src = "<?php echo $fetch ['img'];?>" style = "width:40px; height:40px; border-radius:500px; " > </td>
+									<td><img src = "<?php echo $fetch ['symbol'];?>" style = "width:40px; height:40px; border-radius:500px; " > </td>
 									<td style = "width:20px; text-align:center"><button class = "btn btn-primary"disabled><?php echo $fetch1 ['total'];?></button>	</td>
 								<?php }?>
 								</tbody>
@@ -266,6 +286,7 @@
 							<thead>
 								<td style = "width:600px;"class = "alert alert-success">Candidate for Member </td>
 								<td style = "width:200px;" class = "alert alert-success">Image</td>
+								<td style = "width:200px;" class = "alert alert-success">Symbol</td>
 								<td class = "alert alert-success">Total</td>
 							
 							</thead>
@@ -281,7 +302,8 @@
 								?>
 							<tbody> 
 								<td><?php echo $fetch ['firstname']. " ".$fetch ['lastname'];?></td>
-								<td><img src = "<?php echo $fetch ['img'];?>" style = "width:40px; height:40px; border-radius:500px; " >
+								<td><img src = "<?php echo $fetch ['img'];?>" style = "width:40px; height:40px; border-radius:500px; " > </td>
+								<td><img src = "<?php echo $fetch ['symbol'];?>" style = "width:40px; height:40px; border-radius:500px; " > </td>
 								<td style = "width:20px; text-align:center"><button class = "btn btn-primary"disabled><?php echo $fetch1 ['total'];?></button>	</td>
 							<?php }?>
 							</tbody>

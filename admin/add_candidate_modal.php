@@ -63,9 +63,14 @@
 											
 					<div class="form-group">
                         <label>Image</label>
-						<input type="file" name="image"required> 
+						<input type="file" name="image" required> 
                     </div>
-						<button name = "save" type="submit" class="btn btn-primary">Save Data</button>
+
+					<div class="form-group">
+                        <label>Candidate Symbol</label>
+						<input type="file" name="symbol" required> 
+                    </div>
+						<button name="save" type="submit" class="btn btn-primary">Save Data</button>
 				</form>  
 			</div>
             <div class="modal-footer">
@@ -84,15 +89,19 @@
 					$lastname=$_POST['lastname'];
 					$year_level=$_POST['year_level'];
 					$gender=$_POST['gender'];
+
 					$image= addslashes(file_get_contents($_FILES['image']['tmp_name']));
 					$image_name= addslashes($_FILES['image']['name']);
 					$image_size= getimagesize($_FILES['image']['tmp_name']);
 		
 					move_uploaded_file($_FILES["image"]["tmp_name"],"upload/" . $_FILES["image"]["name"]);			
 					$location="upload/" . $_FILES["image"]["name"];
-					
-					
-					$conn->query("INSERT INTO candidate(position,firstname,lastname,year_level,gender,img)values('$position','$firstname','$lastname','$year_level','$gender','$location')")or die(mysql_error());
+			
+					move_uploaded_file($_FILES["symbol"]["tmp_name"],"upload/" . $_FILES["symbol"]["name"]);	
+					$symbol_image_location= "upload/" . $_FILES["symbol"]["name"];	
+
+					$conn->query("INSERT INTO candidate(position,firstname,lastname,year_level,gender,img,symbol)values('$position','$firstname','$lastname','$year_level','$gender','$location', '$symbol_image_location')") 
+					or die(mysql_error());
 				}						
 			?>					
         </div>
