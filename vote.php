@@ -17,12 +17,17 @@
 					while($fetch = $query->fetch_array())
 				{
 				?>
-		           <div id = "position">
-					<img src = "admin/<?php echo $fetch['img']?>" style ="border-radius:6px;" height = "150px" width = "150px" class = "img">
+		           <div id = "position" style="overflow:hidden">
+					   <div>
+					   <img src = "admin/<?php echo $fetch['img']?>" style ="border-radius:6px;float:left" height = "150px" width = "150px" class = "img">
+					   <img src = "admin/<?php echo $fetch['symbol']?>" style ="border-radius:6px;float:right" height = "110px" width = "110px" class = "img">
+					   </div>
 					
-					<center><button type="button" class="btn btn-primary btn-xs" style = "border-radius:60px;margin-top:4px;"><?php echo $fetch['firstname']." ".$fetch['lastname']?></button></center>
+					
+					<center><button type="button" class="btn btn-primary btn-xs" style = "border-radius:60px;margin-top:30px;"><?php echo $fetch['firstname']." ".$fetch['lastname']?></button></center>
 					<center><input type = "checkbox" value = "<?php echo $fetch['candidate_id'] ?>" name = "pres_id" class = "president"></center>
-					</div>
+					<center><span style="margin-top:4px;"><?php echo $fetch['year_level']?></span></center>
+				</div>
 
 				<?php
 					}
@@ -45,10 +50,14 @@
 							$query = $conn->query("SELECT * FROM `candidate` WHERE `position` = 'Vice President'") or die(mysqli_errno());
 							while($fetch = $query->fetch_array()){
 						?>
-						<div id = "position">
-							<img class = "image-rounded" src = "admin/<?php echo $fetch['img']?>"style ="border-radius:6px;" height = "150px" width = "150px">
-						<center><button type="button" class="btn btn-primary btn-xs" style = "border-radius:60px;margin-top:4px;"><?php echo $fetch['firstname']." ".$fetch['lastname']?></button></center>
+						<div id = "position" style="overflow:hidden">
+						<div>
+					   <img src = "admin/<?php echo $fetch['img']?>" style ="border-radius:6px;float:left" height = "150px" width = "150px" class = "img">
+					   <img src = "admin/<?php echo $fetch['symbol']?>" style ="border-radius:6px;float:right" height = "110px" width = "110px" class = "img">
+					   </div>
+						<center><button type="button" class="btn btn-primary btn-xs" style = "border-radius:60px;margin-top:30px;"><?php echo $fetch['firstname']." ".$fetch['lastname']?></button></center>
 							<center><input type = "checkbox" value = "<?php echo $fetch['candidate_id'] ?>" name = "vp_id" class = "vp"></center>
+							<center><span style="margin-top:4px;"><?php echo $fetch['year_level']?></span></center>
 						</div>
 						<?php
 							}
@@ -72,10 +81,14 @@
 					while($fetch = $query->fetch_array())
 					{
 				?>
-						<div id = "position">
-							<img src = "admin/<?php echo $fetch['img']?>" style ="border-radius:6px;" height = "150px" width = "150px" class = "img">
-						<center><button type="button" class="btn btn-primary btn-xs" style = "border-radius:60px;margin-top:4px;"><?php echo $fetch['firstname']." ".$fetch['lastname']?></button></center>
+						<div id = "position" style="overflow:hidden">
+						<div>
+					   <img src = "admin/<?php echo $fetch['img']?>" style ="border-radius:6px;float:left" height = "150px" width = "150px" class = "img">
+					   <img src = "admin/<?php echo $fetch['symbol']?>" style ="border-radius:6px;float:right" height = "110px" width = "110px" class = "img">
+					   </div>
+						<center><button type="button" class="btn btn-primary btn-xs" style = "border-radius:60px;margin-top:30px;"><?php echo $fetch['firstname']." ".$fetch['lastname']?></button></center>
 							<center><input type = "checkbox" value = "<?php echo $fetch['candidate_id'] ?>" name = "gn_sec_id" class = "gn_sec"></center>
+							<center><span style="margin-top:4px;"><?php echo $fetch['year_level']?></span></center>
 						</div>
 	
 				<?php
@@ -95,10 +108,14 @@
 					while($fetch = $query->fetch_array())
 					{
 				?>
-						<div id = "position">
-							<img src = "admin/<?php echo $fetch['img']?>" style ="border-radius:6px;" height = "150px" width = "150px" class = "img">
-							<center><button type="button" class="btn btn-primary btn-xs" style = "border-radius:60px;margin-top:4px;"><?php echo $fetch['firstname']." ".$fetch['lastname']?></button></center>
+						<div id = "position" style="overflow:hidden">
+						<div>
+					   <img src = "admin/<?php echo $fetch['img']?>" style ="border-radius:6px;float:left" height = "150px" width = "150px" class = "img">
+					   <img src = "admin/<?php echo $fetch['symbol']?>" style ="border-radius:6px;float:right" height = "110px" width = "110px" class = "img">
+					   </div>
+							<center><button type="button" class="btn btn-primary btn-xs" style = "border-radius:60px;margin-top:30px;"><?php echo $fetch['firstname']." ".$fetch['lastname']?></button></center>
 							<center><input type = "checkbox" value = "<?php echo $fetch['candidate_id'] ?>" name = "agn_sec_id" class = "agn_sec"></center>
+							<center><span style="margin-top:4px;"><?php echo $fetch['year_level']?></span></center>
 						</div>
 	
 				<?php
@@ -119,10 +136,14 @@
 					while($fetch = $query->fetch_array())
 					{
 				?>
-						<div id = "position">
-							<img src = "admin/<?php echo $fetch['img']?>" style ="border-radius:6px;" height = "150px" width = "150px" class = "img">
-							<center><button type="button" class="btn btn-primary btn-xs" style = "border-radius:60px;margin-top:4px;"><?php echo $fetch['firstname']." ".$fetch['lastname']?></button></center>
+						<div id = "position" style="overflow:hidden">
+						<div>
+					   <img src = "admin/<?php echo $fetch['img']?>" style ="border-radius:6px;float:left" height = "150px" width = "150px" class = "img">
+					   <img src = "admin/<?php echo $fetch['symbol']?>" style ="border-radius:6px;float:right" height = "110px" width = "110px" class = "img">
+					   </div>
+							<center><button type="button" class="btn btn-primary btn-xs" style = "border-radius:60px;margin-top:30px;"><?php echo $fetch['firstname']." ".$fetch['lastname']?></button></center>
 							<center><input type = "checkbox" value = "<?php echo $fetch['candidate_id'] ?>" name = "sec_st_id" class = "sec_st"></center>
+							<center><span style="margin-top:4px;"><?php echo $fetch['year_level']?></span></center>
 						</div>
 	
 				<?php
@@ -138,14 +159,19 @@
             </div>
             <div class="panel-body" style = "background-color:;">
 				<?php
-					$query = $conn->query("SELECT * FROM `candidate` WHERE `position` = 'Secretary, Internation Affiars'") or die(mysqli_errno());
+					$query = $conn->query("SELECT * FROM `candidate` WHERE `position` = 'Secretary, International Affiars'") or die(mysqli_errno());
 					while($fetch = $query->fetch_array())
 					{
 				?>
-						<div id = "position">
-							<img src = "admin/<?php echo $fetch['img']?>" style ="border-radius:6px;" height = "150px" width = "150px" class = "img">
-							<center><button type="button" class="btn btn-primary btn-xs" style = "border-radius:60px;margin-top:4px;"><?php echo $fetch['firstname']." ".$fetch['lastname']?></button></center>
+						<div id = "position" style="overflow:hidden">
+						<div>
+					   <img src = "admin/<?php echo $fetch['img']?>" style ="border-radius:6px;float:left" height = "150px" width = "150px" class = "img">
+					   <img src = "admin/<?php echo $fetch['symbol']?>" style ="border-radius:6px;float:right" height = "110px" width = "110px" class = "img">
+					   </div>
+							<center><button type="button" class="btn btn-primary btn-xs" style = "border-radius:60px;margin-top:30px;"><?php echo $fetch['firstname']." ".$fetch['lastname']?></button></center>
 							<center><input type = "checkbox"  value = "<?php echo $fetch['candidate_id'] ?>" name = "sec_ia_id" class = "sec_ia"></center>
+							 
+							<center><span style="margin-top:4px;"><?php echo $fetch['year_level']?></span></center>
 						</div>
 	
 				<?php
@@ -161,14 +187,18 @@
             </div>
             <div class="panel-body" style = "background-color:;">
 				<?php
-					$query = $conn->query("SELECT * FROM `candidate` WHERE `position` = 'Seccretary, Literature'") or die(mysqli_errno());
+					$query = $conn->query("SELECT * FROM `candidate` WHERE `position` = 'Secretary, Literature'") or die(mysqli_errno());
 					while($fetch = $query->fetch_array())
 					{
 				?>
-						<div id = "position">
-							<img src = "admin/<?php echo $fetch['img']?>" style ="border-radius:6px;" height = "150px" width = "150px" class = "img">
-						<center><button type="button" class="btn btn-primary btn-xs" style = "border-radius:60px;margin-top:4px;"><?php echo $fetch['firstname']." ".$fetch['lastname']?></button></center>
+						<div id = "position" style="overflow:hidden">
+						<div>
+					   <img src = "admin/<?php echo $fetch['img']?>" style ="border-radius:6px;float:left" height = "150px" width = "150px" class = "img">
+					   <img src = "admin/<?php echo $fetch['symbol']?>" style ="border-radius:6px;float:right" height = "110px" width = "110px" class = "img">
+					   </div>
+						<center><button type="button" class="btn btn-primary btn-xs" style = "border-radius:60px;margin-top:30px;"><?php echo $fetch['firstname']." ".$fetch['lastname']?></button></center>
 							<center><input type = "checkbox" value = "<?php echo $fetch['candidate_id'] ?>" name = "sec_lit_id" class = "sec_lit"></center>
+							<center><span style="margin-top:4px;"><?php echo $fetch['year_level']?></span></center>
 						</div>
 	
 				<?php
@@ -188,10 +218,14 @@
 					while($fetch = $query->fetch_array())
 					{
 				?>
-						<div id = "position">
-							<img src = "admin/<?php echo $fetch['img']?>" style ="border-radius:6px;" height = "150px" width = "150px" class = "img">
-						<center><button type="button" class="btn btn-primary btn-xs" style = "border-radius:60px;margin-top:4px;"><?php echo $fetch['firstname']." ".$fetch['lastname']?></button></center>
+						<div id = "position" style="overflow:hidden">
+						<div>
+					   <img src = "admin/<?php echo $fetch['img']?>" style ="border-radius:6px;float:left" height = "150px" width = "150px" class = "img">
+					   <img src = "admin/<?php echo $fetch['symbol']?>" style ="border-radius:6px;float:right" height = "110px" width = "110px" class = "img">
+					   </div>
+						<center><button type="button" class="btn btn-primary btn-xs" style = "border-radius:60px;margin-top:30px;"><?php echo $fetch['firstname']." ".$fetch['lastname']?></button></center>
 							<center><input type = "checkbox"  value = "<?php echo $fetch['candidate_id'] ?>" name = "sec_cu_id" class = "sec_cu"></center>
+							<center><span style="margin-top:4px;"><?php echo $fetch['year_level']?></span></center>
 						</div>
 	
 				<?php
@@ -211,10 +245,14 @@
 					while($fetch = $query->fetch_array())
 					{
 				?>
-						<div id = "position">
-							<img src = "admin/<?php echo $fetch['img']?>" style ="border-radius:6px;" height = "150px" width = "150px" class = "img">
-							<center><button type="button" class="btn btn-primary btn-xs" style = "border-radius:60px;margin-top:4px;"><?php echo $fetch['firstname']." ".$fetch['lastname']?></button></center>
+						<div id = "position" style="overflow:hidden">
+						<div>
+					   <img src = "admin/<?php echo $fetch['img']?>" style ="border-radius:6px;float:left" height = "150px" width = "150px" class = "img">
+					   <img src = "admin/<?php echo $fetch['symbol']?>" style ="border-radius:6px;float:right" height = "110px" width = "110px" class = "img">
+					   </div>
+							<center><button type="button" class="btn btn-primary btn-xs" style = "border-radius:60px;margin-top:30px;"><?php echo $fetch['firstname']." ".$fetch['lastname']?></button></center>
 							<center><input type = "checkbox"  value = "<?php echo $fetch['candidate_id'] ?>" name = "mem_id" class = "mem"></center>
+							<center><span style="margin-top:4px;"><?php echo $fetch['year_level']?></span></center>
 						</div>
 	
 				<?php

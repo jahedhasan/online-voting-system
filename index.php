@@ -4,7 +4,13 @@
         <div class="row">
 		
 		<center><h3>Online Voting Sytem</h3></center>
-            <div class="col-md-4 col-md-offset-4">
+        <center>
+            ​<picture>
+                <img src="./images/banner.jpg" width="350" height="150" alt="...">
+                </picture>
+        </center>
+         
+            <div class="col-md-4 col-md-offset-4" style="margin-top: -30px;">
 			
                 <div class="login-panel panel panel-default">
 				

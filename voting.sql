@@ -1,11 +1,11 @@
 -- phpMyAdmin SQL Dump
--- version 5.1.0
+-- version 5.0.4
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: Sep 17, 2021 at 06:11 AM
--- Server version: 10.4.18-MariaDB
--- PHP Version: 7.4.16
+-- Generation Time: Oct 01, 2021 at 07:36 PM
+-- Server version: 10.4.17-MariaDB
+-- PHP Version: 8.0.2
 
 SET SQL_MODE = "NO_AUTO_VALUE_ON_ZERO";
 START TRANSACTION;
@@ -43,24 +43,19 @@ CREATE TABLE `candidate` (
 --
 
 INSERT INTO `candidate` (`candidate_id`, `position`, `firstname`, `lastname`, `year_level`, `gender`, `img`, `symbol`) VALUES
-(1, 'President', 'Jahed', 'Hasan', '4th Year', 'Male', 'upload/male3.jpg', NULL),
-(3, 'Vice President', 'Abir', 'Hossain', '2nd Year', 'Male', 'upload/1.jpg', NULL),
-(4, 'President', 'Rafa', 'Anika', '4th Year', 'Female', 'upload/f1.jpg', NULL),
-(5, 'Vice President', 'Abu Bakar', 'Abir', '4th Year', 'Male', 'upload/4.jpg', NULL),
-(6, 'Secretary, Science and Technology', 'Abu Abbas', 'Sabbir', '3rd Year', 'Male', 'upload/6.jpg', NULL),
-(7, 'General Secretary', 'Rafa', ' Anika', '4th Year', 'Female', 'upload/f2.jpg', NULL),
-(8, 'Assistant General Secretary', 'Jamal ', 'Uddin', '2nd Year', 'Male', 'upload/2.png', NULL),
-(9, 'Assistant General Secretary', 'Anjum', ' Islam', '1st Year', 'Female', 'upload/4.JPG', 'upload/2.JPG'),
-(10, 'Secretary, Science and Technology', 'Kamal ', 'khan', '3rd Year', 'Male', 'upload/10.jpg', NULL),
-(11, 'Secretary, International Affiars', 'Jahed ', 'Hasan', '4th Year', 'Male', 'upload/11.png', NULL),
-(12, 'Secretary, International Affiars', 'Hasan', ' Siddique', '3rd Year', 'Male', 'upload/12.png', NULL),
-(13, 'Secretary, Literature', 'Sabbir ', 'Hasan', '3rd Year', 'Male', 'upload/12.png', NULL),
-(14, 'Secretary, Literature', 'Anika Tabassum', 'Anika', '1st Year', 'Female', 'upload/5.jpg', NULL),
-(15, 'Secretary, Culture', 'Jannat', 'Khan', '1st Year', 'Female', 'upload/f4.jpg', NULL),
-(16, 'Secretary, Culture', 'Nadia Karim', 'Nadia', '4th Year', 'Female', 'upload/7f.jpg', NULL),
-(17, 'Member', 'Arafat', 'Hossain', '1st Year', 'Male', 'upload/avatar2.png', NULL),
-(18, 'Member', 'Hasan', 'Jahid', '4th Year', 'Male', 'upload/images.jpg', NULL),
-(19, 'President', 'Jahed', 'Hasan', '1st Year', 'Male', 'upload/clibing.png', 'upload/Screenshot from 2021-05-04 23-10-02.png');
+(1, 'President', 'Jahed', 'Hasan', '4th Year', 'Male', 'upload/12.png', 'upload/116686535_10157919508742203_5608354946770799939_o.jpg'),
+(5, 'Vice President', 'Abu Bakar', 'Abir', '4th Year', 'Male', 'upload/3.jpg', 'upload/116686535_10157919508742203_5608354946770799939_o.jpg'),
+(7, 'General Secretary', 'Rafa', ' Anika', '4th Year', 'Female', 'upload/f2.jpg', 'upload/116686535_10157919508742203_5608354946770799939_o.jpg'),
+(8, 'Assistant General Secretary', 'Jamal ', 'Uddin', '2nd Year', 'Male', 'upload/2.png', 'upload/116686535_10157919508742203_5608354946770799939_o.jpg'),
+(9, 'Assistant General Secretary', 'Anjum', ' Islam', '1st Year', 'Female', 'upload/4.jpg', 'upload/116686535_10157919508742203_5608354946770799939_o.jpg'),
+(10, 'Secretary, Science and Technology', 'Kamal ', 'khan', '3rd Year', 'Male', 'upload/1.jpg', 'upload/116686535_10157919508742203_5608354946770799939_o.jpg'),
+(12, 'Secretary, International Affiars', 'Hasan', ' Siddique', '3rd Year', 'Male', 'upload/2.png', 'upload/116686535_10157919508742203_5608354946770799939_o.jpg'),
+(14, 'Secretary, Literature', 'Anika Tabassum', 'Anika', '1st Year', 'Female', 'upload/7f.jpg', 'upload/116686535_10157919508742203_5608354946770799939_o.jpg'),
+(15, 'Secretary, Culture', 'Jannat', 'Khan', '1st Year', 'Female', 'upload/f4.jpg', 'upload/116686535_10157919508742203_5608354946770799939_o.jpg'),
+(16, 'Secretary, Culture', 'Nadia Karim', 'Nadia', '4th Year', 'Female', 'upload/7f.jpg', 'upload/116686535_10157919508742203_5608354946770799939_o.jpg'),
+(17, 'Member', 'Arafat', 'Hossain', '1st Year', 'Male', 'upload/10.jpg', 'upload/116686535_10157919508742203_5608354946770799939_o.jpg'),
+(18, 'Member', 'Hasan', 'Jahid', '4th Year', 'Male', 'upload/images.jpg', 'upload/116686535_10157919508742203_5608354946770799939_o.jpg'),
+(19, 'President', 'Jahed', 'Hasan', '1st Year', 'Male', 'upload/male3.jpg', 'upload/116686535_10157919508742203_5608354946770799939_o.jpg');
 
 -- --------------------------------------------------------
 
