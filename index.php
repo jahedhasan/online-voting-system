@@ -10,7 +10,7 @@
                 </picture>
         </center>
          
-            <div class="col-md-4 col-md-offset-4" style="margin-top: -30px;">
+            <div class="col-md-4 col-md-offset-4" style="margin-top: -70px;">
 			
                 <div class="login-panel panel panel-default">
 				
@@ -52,6 +52,8 @@
                 </div>
             </div>
         </div>
+
+        <?php include ('footer.php');?>
     </div>
 
   <?php include ('script.php');?>
